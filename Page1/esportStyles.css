@@ -1,0 +1,117 @@
+/*full page*/
+body{
+
+}
+
+/*container*/
+.container{
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #f6fbf8;
+    font-family: 'Antic Slab', serif;
+}
+
+/*page Title*/
+.title{
+    display: flex;
+    width:970px;
+    height: 70px;
+    background-color:rgb(218, 213, 213) ;
+    padding: auto;;
+}
+.logo{
+    float: left;
+    padding-left: 10px;
+    padding-right:15px ;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+#img{
+    display: flex;
+    height: 60px;
+    width: 50px;
+}
+
+/*navigation menu*/
+.navigation{
+    display: flex;
+    width: 970px;
+    height: 50px;
+    background-color: rgb(250, 178, 44);
+}
+.navigation a{
+    text-decoration: none;
+    font-size:20px;
+    font-weight: bolder;
+    color:rgb(48, 44, 44);
+    padding: 12px 10px 7px 10px;
+}
+a:hover{color: rgb(243, 235, 225);  
+}
+
+/*introduction*/
+#heading{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 15px;
+   margin-bottom: -7px;
+   margin-top: 20px;
+}
+.intro{
+  
+    font-size: 18px;
+    text-align: justify;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+/*main content area*/
+.middle{
+    display: flex;
+}
+.main{
+    width: 550px;
+    background-color: rgb(247, 181, 59);
+    text-align: justify;
+    padding:12px ;
+    font-family: 'Times New Roman', Times, serif;
+    
+    font-size: 20px;
+   
+}
+
+.side{
+    width: 420px;
+    background-color: rgb(218, 213, 213);
+    text-align: justify;
+    font-weight: bold;
+    padding:12px ;
+}
+#img2{
+    width: 420px;
+}
+.footer{
+    display: flex;
+    width: 970px;
+    height: 90px;
+    background-color: rgb(44, 42, 38);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: antiquewhite;
+}
+#links{
+    font-size: larger;
+    padding:35px;
+}
+#links a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding-left: 15px;
+}
+
+#copyrights{
+    font-size: larger;
+    padding:35px;
+}
