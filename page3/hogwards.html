@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hogwardsStyle.css">
+    <link rel="stylesheet" href=" https://www.fontspace.com/harry-p-font-f44342">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Hogwards</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="logo">
+                <img src="F:\HtmlPractices\images\harry-potterlogo1.png" alt="refresh" id="imghp">
+                <div id="tt"><h1>Harry Potter</h1></div>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Wizards</a>
+                <a href="#">Magic Wands</a>
+                <a href="#">Pets</a>
+            </nav>
+        </header>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="F:\HtmlPractices\CSS\Hslider1.jpg" style="width:100%">
+              <div class="text">Harry Potter</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="F:\HtmlPractices\CSS\Hslider2.jpg" style="width:100%">
+              <div class="text">The Hogwards</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="F:\HtmlPractices\CSS\Hslider3.jpg" style="width:100%">
+              <div class="text">Albus Dumbledore
+            </div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        <div class="content">
+            <div class="left">
+                <h2>Hogwards</h2>
+                <p>
+                    Hogwarts School of Witchcraft and Wizardry is a fictional Scottish boarding school of magic for students aged eleven to eighteen, and is the primary setting for the first six books in J. K. Rowling's Harry Potter series and serves as a major setting in the Wizarding World universe.
+                </p>
+            </div>
+            <div class="center">
+                <h2>Harry Potter</h2>
+                <p>
+                    Harry Potter is a wizard, the only child of James and Lily Potter. He is famous for having survived an attack by Lord Voldemort when he was a baby. He is also sometimes known as 'The Boy Who Lived'. For the first eleven years of his life Harry lives with his mean aunt and uncle and is unaware of his wizarding roots.                </p>
+            </div>
+            <div class="right">
+                <h2>Albus Dumbledore</h2>
+                <p>
+                    Prof. Albus Percival Wulfric Brian Dumbledore[1] is a fictional character in J. K. Rowling's Harry Potter series. For most of the series, he is the headmaster of the wizarding school Hogwarts. As part of his backstory, it is revealed that he is the founder and leader of the Order of the Phoenix, an organisation dedicated to fighting Lord Voldemort, the main antagonist of the series.                </p>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div id="leftfoot">
+                <a href="#"><img src="F:\HtmlPractices\images\Email-icon.png" alt=""></a>
+                <a href="#"><img src="F:\HtmlPractices\images\instagram-icon.png" alt=""></a>
+                <a href="#"><img src="F:\HtmlPractices\images\twitter-icon.png" alt=""></a>
+
+            </div>
+            <div id="rightfoot">
+                <address>
+                    4,Privet Drive, Hogwards castel,Scotland,United Kingdom
+                </address>   
+            </div>
+        </div>
+       
+            <div id="credits">
+                <a href="#">© Copyright 2023</a>
+                <a href="#"> Reference</a>
+                <a href="#"> Harry Potter Fan Zone</a>
+            </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+</body>
+</html>

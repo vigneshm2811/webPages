@@ -1,0 +1,111 @@
+body{
+    background-color: #71918e;
+}
+
+/*web page contents*/
+.page{
+    width:960px;
+    background-color: rgba(220, 228, 235, 0.582);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*logo area */
+.logo{
+    text-align: right;
+    background-color: #89e8df;
+}
+#logo1{
+    width: 50px;
+    height: 50px;
+    border: 1px ;
+}
+#logo2{
+    width: 50px;
+    height: 50px;
+    border: 1px ;
+
+}
+#logo3{
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    opacity: 5;
+}
+
+/*site title*/
+.sitetitle
+{
+   
+    width: 960px;
+    font-size: 40;
+    background-color: rgba(236, 183, 84, 0.993);
+    text-align: center;
+    padding-top: 25px; 
+    padding-bottom: 25px; 
+}
+/*navigation bar*/
+.navigation
+{
+    display: flex;
+    height: 60px;
+    width: 960px;
+    background-color: rgb(68, 62, 62);
+    align-items: center;
+}
+.navigation a{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#slider{
+    height: 300px;
+    width: 960px;
+ 
+}
+
+/*containers*/
+.articles{
+    display: flex;
+}
+h2{
+    text-align: center;
+}
+.container1{
+    font-family: noto ;
+	font-size: 18px;
+	line-height: 20px;
+	
+	padding: 12px;
+	width: 320px;
+	background: #64d9ed;
+	text-align: justify;
+}
+
+.container2{
+	font-family: Noto;
+	font-size: 18px;
+	line-height: 20px;
+
+	padding: 12px;
+	width: 320px;	
+	background: #e6f037;
+	color: black;
+	text-align: justify;
+}
+
+.container3{
+    font-family: Noto;
+	font-size: 20px;
+	line-height: 20px;
+
+	padding: 12px;
+	width: 320px;
+	background: #46db98;
+	text-align: justify;
+	color:black;
+}
