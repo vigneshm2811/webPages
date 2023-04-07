@@ -13,7 +13,7 @@ body{
 
 /*page*/
 .page{
-    width:940px;
+    width:1000px;
     background-color: lightgray;
     align-items: center;
     margin-left: auto;
@@ -24,7 +24,7 @@ body{
 /* Header*/
 header{
     display: flex;
-    width: 940px;
+    width: 1000px;
     height: 90px;
     margin-top: 30px;
     font-family: 'harry';
@@ -50,7 +50,7 @@ header{
 nav{
     display: flex;
     padding-right: 20px;
-    width: 350px;  
+    width: 400px;  
 }
 nav a{
     text-decoration: none;
@@ -192,7 +192,7 @@ h2{
 
 /*footer*/
 .footer{
-    width: 940px;
+    width: 1000px;
     height: 130px;
     background-color:  #333333;
     margin-top: 15px;
